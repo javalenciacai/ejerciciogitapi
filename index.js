@@ -1,3 +1,5 @@
+const { sumar } = require('./function');
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
