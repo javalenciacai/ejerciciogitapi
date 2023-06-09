@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 //Ruta para sumar dos numeros.
-app.get('/sumar/:num1/:num2',(req,res) = > {
+app.get('/sumar/:num1/:num2',(req,res) => {
 const {num1 , num2 } = req.params;
 const resultado = sumar(parseFloat(num1),parseFloat(num2));
 res.json({resultado});
