@@ -1,0 +1,25 @@
+name: unittest
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - develop
+      - release
+      - main
+  
+
+jobs:
+  test_funcionales:
+      runs-on: ubuntu-latest      
+      steps:        
+        - uses: actions/checkout@v3
+        - name: instalar dependencias
+          run: |
+            npm install mocha
+            npm install chai
+            npm install chai-http
+
+        - name: npm test
+          run: |
+            npx mocha test*
