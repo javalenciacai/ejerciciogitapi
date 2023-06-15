@@ -30,7 +30,7 @@ describe('Unit Tests', () => {
 
   describe('validar si es numero primo', () => {
     it("should return if a number is prime number", () => {
-      const num = 17;
+      const num = 18;
 
       const result = esPrimo(num);
 
