@@ -10,9 +10,10 @@ describe('Unit Tests', () => {
   
         // Act
         const result = reverse(array1);
+        const expect_array = [3, 2, 1];
   
         // Assert
-        expect(result).to.equal([3,2,1]);
+        expect(result).to.equal(expect_array);
       });
     });
 });

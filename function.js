@@ -5,8 +5,10 @@ function sumar(a,b){
     return a+b;
 }
 
-function reverse(arreglo){
-    return null;
+function reverse(arr){
+    const array_reverse = arr.slice();
+    array_reverse.reverse();
+    return array_reverse;
 }
 
 
