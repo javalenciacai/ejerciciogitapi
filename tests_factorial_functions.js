@@ -1,5 +1,5 @@
 const { describe } = require("mocha");
-const { factorial } = require('./function');
+const { factorial } = require('./factorialFunction');
 const { expect } = require("chai");
 
 describe('Function exist', () => {
