@@ -1,6 +1,6 @@
 const { describe, it } = require('mocha');
 const { expect } = require('chai');
-const { sumar } = require('./function');
+const { sumar,maxNumber } = require('./function');
 
 describe('funcion sumar eficiente', () => {
   it('should not take more than 1ms', () => {
@@ -26,6 +26,12 @@ describe('Funcion sumar contiene if', () => {
   it('should have an if statement', () => {
     const functionString = sumar.toString();
     expect(functionString).to.include('if(typeof a !== \'number\' || typeof b !== \'number\')');
+  });
+});
+
+describe('Función numero maximo existe', () => {
+  it('debería existir la función numero maximo', () => {
+    expect(maxNumber).to.exist;
   });
 });
   
