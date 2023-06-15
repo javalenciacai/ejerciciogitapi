@@ -19,4 +19,4 @@ function esPrimo(num){
   }
 }
 
-module.exports = {sumar};
+module.exports = {sumar, esPrimo};
