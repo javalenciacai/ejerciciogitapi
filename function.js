@@ -10,8 +10,8 @@ function esPrimo(num){
         throw new Error("los argumentos debe ser un número");
     }
 
-    for (let i = 2; i <= Math.sqrt(numero); i++) {
-        if (numero % i === 0) {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
             return false;
         }
 
