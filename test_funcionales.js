@@ -1,6 +1,6 @@
 const { describe, it } = require('mocha');
 const { expect } = require('chai');
-const { sumar } = require('./function');
+const { sumar, esPrimo } = require('./function');
 
 describe('Unit Tests', () => {
   describe('sumar', () => {
@@ -27,4 +27,15 @@ describe('Unit Tests', () => {
       expect(() => sumar(2, null)).to.throw('los argumentos deben ser números');
     });
   });
+
+  describe('validar si es numero primo', () => {
+    it("should return if a number is prime number", () => {
+      const num = 17;
+
+      const result = esPrimo(num);
+
+      expect(result).equals(true);
+    });
+  });
+  
 });
