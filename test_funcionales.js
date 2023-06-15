@@ -1,6 +1,6 @@
 const { describe, it } = require('mocha');
 const { expect } = require('chai');
-const { sumar } = require('./function');
+const { sumar, maxNumber } = require('./function');
 
 describe('Unit Tests', () => {
   describe('sumar', () => {
@@ -27,4 +27,15 @@ describe('Unit Tests', () => {
       expect(() => sumar(2, null)).to.throw('los argumentos deben ser números');
     });
   });
+
+  describe('max number', ()=>{
+    it('should return the max number into array',()=>{
+      //arrange
+      const num = [1,3,5,2,4]
+      //act
+      const result = maxNumber(num)
+      //assert
+      expect(result).to.equal(5)
+    })
+  })
 });
