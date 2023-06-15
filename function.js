@@ -5,4 +5,12 @@ function sumar(a,b){
     return a+b;
 }
 
+function reverse(arreglo){
+    return null;
+}
+
+
+
 module.exports = {sumar};
+
+module.exports = {reverse};
