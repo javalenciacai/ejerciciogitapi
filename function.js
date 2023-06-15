@@ -4,5 +4,8 @@ function sumar(a,b){
     }
     return a+b;
 }
+function maxNumber(array){
+    return Math.max(...array);
+}
 
-module.exports = {sumar};
+module.exports = {sumar, maxNumber};
