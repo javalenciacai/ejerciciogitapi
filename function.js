@@ -3,6 +3,7 @@ function sumar (a, b) {
         throw new Error('Los argumentos deben ser números');
     
     }
+    
     return a + b;
 }
 
